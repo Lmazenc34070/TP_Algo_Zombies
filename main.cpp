@@ -27,7 +27,7 @@ int main()
 
     Bomber b1;
     b1.showInfos();
-    cout<<"le bomber attaque michel !"<<endl<<endl;
+    cout<<"Le bomber attaque michel !"<<endl<<endl;
     b1.zombieBoom(&z3);
     b1.~Zombie();
     z3.showInfos();
@@ -37,7 +37,7 @@ int main()
     Rapace r1;
     r1.showInfos();
     r1.attackAndHeal(&t1);
-    cout <<"apres attaque sur tank"<<endl<<endl;
+    cout <<"Apres attaque sur tank"<<endl<<endl;
     t1.showInfos();
     r1.showInfos();
 
