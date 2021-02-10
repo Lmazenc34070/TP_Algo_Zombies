@@ -13,7 +13,7 @@ class Tank : public Zombie
 
         void attackShield(Zombie* cible);
         void showInfos();
-        void attackTank(Zombie* cible);
+        void protectTank(Zombie* cible);
 
     protected:
 

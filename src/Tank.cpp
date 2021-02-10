@@ -17,7 +17,7 @@ void Tank::setShield(int s)
 }
 
 
-void Tank::attackTank(Zombie* cible){
+void Tank::protectTank(Zombie* cible){
     if (getShield()>0){
         setShield(getShield() - cible->getAttack());
     }else{
@@ -29,6 +29,7 @@ void Tank::attackShield(Zombie* cible){
     if (getShield()>0){
         cible->setPv(cible->getPv()-getShield());
     }else{
+        cout<<"Plus de shield, donc attaque normale en consequence !"<<endl;
         cible->setPv(cible->getPv()-getAttack());
     }
 }
