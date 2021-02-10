@@ -19,5 +19,6 @@ void Bomber::showInfos(){
     cout << "Le nom du zombie : " << getNom() << endl;
     cout << "Les pv du zombie : " << getPv() << endl;
     cout << "La valeur d'attack du zombie: " << getAttack() << endl<<endl;
+
 }
 
