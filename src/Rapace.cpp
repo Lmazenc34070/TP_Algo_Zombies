@@ -1,7 +1,10 @@
 #include "Rapace.h"
 
-Rapace::Rapace() : Zombie(50, 5, "Rapace")
+Rapace::Rapace() : Zombie()
 {
+    nom = "Rapace";
+    attack /=2;
+    pv /=2;
 }
 
 

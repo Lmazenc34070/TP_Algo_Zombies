@@ -12,7 +12,6 @@ int main()
     Zombie z;
     z.showInfos();
 
-
     Zombie z2(600, 60, "Michel la victime");//Sert de punching ball
     Zombie z3(80, 60, "Jacques la victime");//Sert de punching ball
     z2.showInfos();
@@ -25,9 +24,6 @@ int main()
     }
     cout<< "Etat de Michel a present : "<<endl;
     z2.showInfos();
-
-
-
 
     Bomber b1;
     b1.showInfos();
@@ -45,12 +41,14 @@ int main()
     t1.showInfos();
     r1.showInfos();
 
-    t1.attackShield(&z2);
-    z2.showInfos();
 
     Mage m1;
     m1.showInfos();
-
+    cout <<"Le mage decide de taper sur le tank !"<<endl<<endl;
+    m1.skillsMage(&t1);
+    t1.showInfos();
+    m1.skillsMage(&t1);
+    t1.showInfos();
 
     Fusion f1;
     f1.showInfos();

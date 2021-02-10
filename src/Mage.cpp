@@ -17,7 +17,7 @@ void Mage::setCompteur(int c){
 void Mage::skillsMage(Zombie* cible){
     if (getCompteur()==1)
     {
-        cible->setShield(cible->getShield()*0);
+        cible->setShield(getShield()*0);
         cible->setAttack(cible->getAttack()/2);
         setCompteur(getCompteur()-1);
     }

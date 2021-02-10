@@ -67,7 +67,7 @@
 1612822010 source:c:\users\33785\onedrive\documents\alexis_h_usine_zombies\src\fusion.cpp
 	"Fusion.h"
 
-1612954787 source:c:\users\33785\onedrive\documents\tp_algo_zombies\main.cpp
+1612955785 source:c:\users\33785\onedrive\documents\tp_algo_zombies\main.cpp
 	"Zombie.h"
 	"Bomber.h"
 	"Rapace.h"
@@ -75,7 +75,7 @@
 	"Mage.h"
 	"Fusion.h"
 
-1612820362 c:\users\33785\onedrive\documents\tp_algo_zombies\include\zombie.h
+1612956694 c:\users\33785\onedrive\documents\tp_algo_zombies\include\zombie.h
 	<string>
 	<iostream>
 	<random>
@@ -87,12 +87,11 @@
 1612949032 c:\users\33785\onedrive\documents\tp_algo_zombies\include\rapace.h
 	"Zombie.h"
 
-1612954677 c:\users\33785\onedrive\documents\tp_algo_zombies\include\tank.h
+1612956380 c:\users\33785\onedrive\documents\tp_algo_zombies\include\tank.h
 	"Zombie.h"
 
-1612948786 c:\users\33785\onedrive\documents\tp_algo_zombies\include\mage.h
+1612955471 c:\users\33785\onedrive\documents\tp_algo_zombies\include\mage.h
 	"Zombie.h"
-	"Tank.h"
 
 1612947731 c:\users\33785\onedrive\documents\tp_algo_zombies\include\fusion.h
 	"Zombie.h"
@@ -101,18 +100,18 @@
 1612949339 source:c:\users\33785\onedrive\documents\tp_algo_zombies\src\fusion.cpp
 	"Fusion.h"
 
-1612948893 source:c:\users\33785\onedrive\documents\tp_algo_zombies\src\mage.cpp
+1612955448 source:c:\users\33785\onedrive\documents\tp_algo_zombies\src\mage.cpp
 	"Mage.h"
 
-1612949026 source:c:\users\33785\onedrive\documents\tp_algo_zombies\src\rapace.cpp
+1612956891 source:c:\users\33785\onedrive\documents\tp_algo_zombies\src\rapace.cpp
 	"Rapace.h"
 
-1612947847 source:c:\users\33785\onedrive\documents\tp_algo_zombies\src\tank.cpp
+1612957073 source:c:\users\33785\onedrive\documents\tp_algo_zombies\src\tank.cpp
 	"Tank.h"
 
-1612949343 source:c:\users\33785\onedrive\documents\tp_algo_zombies\src\zombie.cpp
+1612956638 source:c:\users\33785\onedrive\documents\tp_algo_zombies\src\zombie.cpp
 	"Zombie.h"
 
-1612954510 source:c:\users\33785\onedrive\documents\tp_algo_zombies\src\bomber.cpp
+1612956751 source:c:\users\33785\onedrive\documents\tp_algo_zombies\src\bomber.cpp
 	"Bomber.h"
 

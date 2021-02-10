@@ -1,8 +1,9 @@
 #include "Bomber.h"
 
-Bomber::Bomber() : Zombie(100,20,"Bomber")
+Bomber::Bomber() : Zombie()
 {
-
+    nom = "Bomber";
+    attack*=2;
 }
 
 

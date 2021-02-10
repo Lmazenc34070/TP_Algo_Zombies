@@ -11,17 +11,17 @@ class Tank : public Zombie
         int getShield();
         void setShield(int s);
 
+        int getPv();
+        void setPv(int p);
+
         void attackShield(Zombie* cible);
         void showInfos();
-        void protectTank(Zombie* cible);
+        void attackBasique(Zombie* cible);
 
     protected:
-
-    private:
-        int attack;
         int pv;
-        string nom;
         int shield;
+
 };
 
 #endif // TANK_H

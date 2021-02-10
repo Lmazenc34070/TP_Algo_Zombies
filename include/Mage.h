@@ -2,7 +2,7 @@
 #define MAGE_H
 
 #include "Zombie.h"
-#include "Tank.h"
+//#include "Tank.h"
 
 class Mage : public Zombie
 {

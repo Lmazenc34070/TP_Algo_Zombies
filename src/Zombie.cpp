@@ -27,12 +27,12 @@ int Zombie::getPv(){
     return pv;
 }
 
-//J'indique la limite seulement pour Paul qui est le zombie de base, joli prénom nom ?
+//J'indique la limite seulement pour Paul qui est le zombie de base, vu qu'il y'aura des zombies supérieur
 void Zombie::setPv(int p){
     if (getNom()=="Paul")
     {
       if (p>100 || pv<= 0){
-            pv = 0;
+            this->~Zombie();
             cerr<<"Valeur de vie non autorisee, le zombie s'est decompose"<<endl;
         }else{
             pv = p;
@@ -47,7 +47,7 @@ int Zombie::getAttack(){
     return attack;
 }
 
-//J'indique la limite seulement pour Paul qui est le zombie de base, joli prénom nom ?
+//J'indique la limite seulement pour Paul qui est le zombie de base, vu qu'il y'aura des zombies supérieurs
 void Zombie::setAttack(int a){
     if (getNom()=="Paul")
     {
@@ -72,8 +72,15 @@ void Zombie::setNom(string n){
 }
 
 //Méthode pour qu'un zombie puisse en attaquer un autre
-void Zombie::attackBasique(Zombie* cible){
-    cible->setPv(cible->getPv() - getAttack());
+void Zombie::attackBasique(Zombie* cible)
+{
+    if (getShield()>0)
+    {
+        cible->setPv(cible->getShield() - getAttack());
+    }else{
+        cible->setPv(cible->getPv() - getAttack());
+    }
+
 }
 
 int Zombie::getShield()

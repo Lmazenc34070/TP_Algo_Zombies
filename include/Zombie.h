@@ -40,8 +40,6 @@ class Zombie
 
 
     protected:
-
-    private:
         int pv;
         int attack;
         string nom;

@@ -1,7 +1,10 @@
 #include "Tank.h"
 
-Tank::Tank() : Zombie(100, 50, "Tank")
+Tank::Tank() : Zombie()
 {
+    nom ="Tank";
+    attack = 10;
+    pv = 100;
     setShield(50);
 }
 
@@ -16,8 +19,25 @@ void Tank::setShield(int s)
     shield = s;
 }
 
+int Tank::getPv(){
+    return pv;
+}
 
-void Tank::protectTank(Zombie* cible){
+void Tank::setPv(int p){
+
+    cout<<"je suis dans tank"<<endl;
+    if (pv<= 0){
+        this->~Zombie();
+        cerr<<"Valeur de vie non autorisee, le zombie s'est decompose"<<endl;
+    }
+    else
+    {
+            pv = p;
+    }
+}
+
+
+void Tank::attackBasique(Zombie* cible){
     if (getShield()>0){
         setShield(getShield() - cible->getAttack());
     }else{
